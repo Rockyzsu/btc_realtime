@@ -4,9 +4,15 @@
 @file:monitor.py
 @time:2021/01/08
 """
+import datetime
+
 import requests
 import json
 import os
+import time
+
+# update btc price every 10s
+INTERVAL = 10
 
 class BTCPrice():
 
@@ -29,10 +35,18 @@ class BTCPrice():
         else:
             return []
 
+    @property
     def data(self):
         data = self.get()
         if data:
-            print(self.price(data))
+            return self.price(data)
+        else:
+            return None
+
+    def display(self):
+        while True:
+            print(f'{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")} : ',self.data)
+            time.sleep(INTERVAL)
 
     def price(self,row):
         return row['status']['summery']['curr']
@@ -40,3 +54,8 @@ class BTCPrice():
     def read_config(self, file):
         with open(file, 'r') as f:
             return json.load(f)
+
+
+if __name__=='__main__':
+    btc = BTCPrice()
+    btc.display()
