@@ -1,0 +1,17 @@
+{
+  "url": "https://api.mytokenapi.com/api/v1/index/currencycal?pair_id=1334945&period=4h&language=zh_cn&timestamp=1610067196252&code=4f8d3c79f673691ad4fa233e3dbfe90d&platform=web_pc&v=1.0.0&legal_currency=CNY",
+  "headers": {
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "zh,en;q=0.9,en-US;q=0.8,zh-CN;q=0.7",
+    "cache-control": "no-cache",
+    "content-type": "application/x-www-form-urlencoded",
+    "origin": "https://www.mytokencap.com",
+    "pragma": "no-cache",
+    "referer": "https://www.mytokencap.com/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36"
+  }
+}
