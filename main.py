@@ -7,7 +7,7 @@
 from http_method.monitor import BTCPrice
 def main():
     btc = BTCPrice()
-    btc.data()
+    btc.display()
 
 if __name__ == '__main__':
     main()
